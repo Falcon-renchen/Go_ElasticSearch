@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996a7c23-7366-46fa-a77b-6bb4978f9176" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es01/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es01/AppInit/DBInit.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es01/AppInit/EsHelper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es01/InitBooks.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es01/Models/Books.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es01/books.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es02/AppInit/DBInit.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es02/AppInit/EsHelper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es02/InitBooks.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es02/Models/Books.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es02/books.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es02/main/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/1.docker pull.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/2.update tag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/es01/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/es01/main/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +52,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -57,8 +66,12 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/es01/main" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/es01" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build Go_ElasticSearch7/es02">
     <configuration name="go build Go_ElasticSearch7/es01/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go_ElasticSearch7" />
       <working_directory value="$PROJECT_DIR$" />
@@ -68,8 +81,28 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build Go_ElasticSearch7/es02" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go_ElasticSearch7" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/es02/InitBooks.go" />
+      <package value="Go_ElasticSearch7/es02" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build InitBooks.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go_ElasticSearch7" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/es01/InitBooks.go" />
+      <package value="Go_ElasticSearch7" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Go_ElasticSearch7/es02" />
+        <item itemvalue="Go Build.go build InitBooks.go" />
         <item itemvalue="Go Build.go build Go_ElasticSearch7/es01/main" />
       </list>
     </recent_temporary>
@@ -77,26 +110,34 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="es" />
+    <option name="LAST_COMMIT_MESSAGE" value="es" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>https://goproxy.io</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1162" height="357" key="GridCell.Tab.0.bottom" timestamp="1622044473669">
+    <state x="928" y="149" key="CommitChangelistDialog2" timestamp="1622104756323">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1162" height="357" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1622044473669" />
-    <state width="1162" height="357" key="GridCell.Tab.0.center" timestamp="1622044473669">
+    <state x="928" y="149" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1622104756323" />
+    <state width="1878" height="477" key="GridCell.Tab.0.bottom" timestamp="1622128708062">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1162" height="357" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1622044473669" />
-    <state width="1162" height="357" key="GridCell.Tab.0.left" timestamp="1622044473668">
+    <state width="1878" height="477" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1622128708062" />
+    <state width="1878" height="477" key="GridCell.Tab.0.center" timestamp="1622128708061">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1162" height="357" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1622044473668" />
-    <state width="1162" height="357" key="GridCell.Tab.0.right" timestamp="1622044473669">
+    <state width="1878" height="477" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1622128708061" />
+    <state width="1878" height="477" key="GridCell.Tab.0.left" timestamp="1622128708061">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1162" height="357" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1622044473669" />
+    <state width="1878" height="477" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1622128708061" />
+    <state width="1878" height="477" key="GridCell.Tab.0.right" timestamp="1622128708062">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="477" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1622128708062" />
   </component>
 </project>

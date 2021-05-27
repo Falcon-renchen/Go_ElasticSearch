@@ -16,9 +16,18 @@ func main() {
 		log.Fatal(err)
 	}
 	ctx := context.Background() //假设不会超时
-	mapping, err := client.GetMapping().Index("news").Do(ctx)
+	//mapping, err := client.GetMapping().Index("news").Do(ctx)
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+	//fmt.Println(mapping)
+
+	json := `{"news_title":"test1","news_type":"php","news_status":1}`
+
+	//获取索引，类似数据库表
+	data, err := client.Index().Index("news").Id("101").BodyString(json).Do(ctx)
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
 	}
-	fmt.Println(mapping)
+	fmt.Println(data)
 }
