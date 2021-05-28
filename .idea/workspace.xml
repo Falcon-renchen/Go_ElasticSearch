@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996a7c23-7366-46fa-a77b-6bb4978f9176" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/es04/AppInit/DBInit.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es04/AppInit/EsHelper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es04/Funs/books_get.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es04/InitBooks.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es04/Models/Books.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es04/Server/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es04/main/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es05/AppInit/DBInit.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es05/AppInit/EsHelper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es05/Funs/books_get.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es05/InitBooks.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es05/Models/Books.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es05/Server/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es05/main/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/12.enter kb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/es03/Funs/books_get.go" beforeDir="false" afterPath="$PROJECT_DIR$/es03/Funs/books_get.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es03/InitBooks.go" beforeDir="false" afterPath="$PROJECT_DIR$/es03/InitBooks.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,26 +128,26 @@
     <proxy>https://goproxy.io</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="928" y="149" key="CommitChangelistDialog2" timestamp="1622132148946">
+    <state x="928" y="149" key="CommitChangelistDialog2" timestamp="1622177408886">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="928" y="149" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1622132148946" />
-    <state width="1104" height="195" key="GridCell.Tab.0.bottom" timestamp="1622173516511">
+    <state x="928" y="149" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1622177408886" />
+    <state width="1104" height="195" key="GridCell.Tab.0.bottom" timestamp="1622178074235">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1104" height="195" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1622173516511" />
-    <state width="1104" height="195" key="GridCell.Tab.0.center" timestamp="1622173516510">
+    <state width="1104" height="195" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1622178074235" />
+    <state width="1104" height="195" key="GridCell.Tab.0.center" timestamp="1622178074234">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1104" height="195" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1622173516510" />
-    <state width="1104" height="195" key="GridCell.Tab.0.left" timestamp="1622173516510">
+    <state width="1104" height="195" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1622178074234" />
+    <state width="1104" height="195" key="GridCell.Tab.0.left" timestamp="1622178074233">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1104" height="195" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1622173516510" />
-    <state width="1104" height="195" key="GridCell.Tab.0.right" timestamp="1622173516510">
+    <state width="1104" height="195" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1622178074233" />
+    <state width="1104" height="195" key="GridCell.Tab.0.right" timestamp="1622178074234">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1104" height="195" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1622173516510" />
+    <state width="1104" height="195" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1622178074234" />
     <state x="938" y="190" key="SettingsEditor" timestamp="1622172431007">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
