@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Go_ElasticSearch7/es03/AppInit"
-	"Go_ElasticSearch7/es03/Models"
+	"Go_ElasticSearch7/es04/AppInit"
+	"Go_ElasticSearch7/es04/Models"
 	"context"
 	"fmt"
 	"github.com/olivere/elastic/v7"
