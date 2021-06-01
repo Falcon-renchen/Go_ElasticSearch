@@ -19,6 +19,15 @@ func main() {
 
 		//http://localhost:8080/books/presses/湘潭大学出版社,人民邮电出版社
 		g.Handle("GET", "/presses/:press", Funs.LoadBooksByPress)
+
+		//搜索api
+		g.Handle("POST", "/search", Funs.SeachBook)
+	}
+
+	//helper
+	helper := router.Group("/helper")
+	{
+		helper.Handle("GET", "/press", Funs.PressList)
 	}
 
 	router.StaticFS("/ui", http.Dir("./htmls"))
