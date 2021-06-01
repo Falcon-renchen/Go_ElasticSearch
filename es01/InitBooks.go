@@ -14,7 +14,9 @@ func main() {
 
 	for {
 		book_list := Models.BookList{}
-		db := AppInit.GetDB().Order("book_id desc").Limit(pagesize).Offset((page - 1) * pagesize).Find(&book_list)
+		db := AppInit.GetDB().Select("book_id,book_name,book_intr,book_price1,book_price2,book_author,book_press,book_kind " +
+			",if(book_date='','1970-01-01',ltrim(book_date)) as book_date").
+			Order("book_id desc").Limit(pagesize).Offset((page - 1) * pagesize).Find(&book_list)
 		if db.Error != nil || len(book_list) == 0 {
 			break
 		}
