@@ -5,7 +5,7 @@
                 <dt>
                     出版社
                 </dt>
-                <dd v-for="item in this.pressList"><a href="">{{item}}</a></dd>
+                <dd v-for="item in pressList"><a href="">{{item}}</a></dd>
             </dl>
             <dl class="sdt">
                 <dt>

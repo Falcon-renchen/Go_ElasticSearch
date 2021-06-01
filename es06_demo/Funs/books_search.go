@@ -16,6 +16,7 @@ func SeachBook(ctx *gin.Context) {
 		})
 		return
 	}
+	//书名
 	machQuery := elastic.NewMatchQuery("BookName", searchModel.BookName)
 	rsp, err := AppInit.GetEsClient().Search().Query(machQuery).
 		Index("books").Do(ctx)
