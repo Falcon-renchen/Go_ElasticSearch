@@ -33,11 +33,12 @@ func SeachBook(ctx *gin.Context) {
 	//组合查询
 	qList := make([]elastic.Query, 0)
 	if searchModel.BookName != "" { //判断书名
-		//书名
+		//加入图书名搜索条件
 		machQuery := elastic.NewMatchQuery("BookName", searchModel.BookName)
 		qList = append(qList, machQuery)
 	}
-	if searchModel.BookPress != "" { //判断出版社
+	//加入出版社搜索条件
+	if searchModel.BookPress != "" {
 		pressQuery := elastic.NewTermQuery("BookPress", searchModel.BookPress)
 		qList = append(qList, pressQuery)
 	}
@@ -60,6 +61,7 @@ func SeachBook(ctx *gin.Context) {
 		  }
 		}
 	*/
+	//设置价格搜索范围
 	if searchModel.BookPrice1Start > 0 || searchModel.BookPrice1End > 0 {
 		priceRangeQuery := elastic.NewRangeQuery("BookPrice1")
 		if searchModel.BookPrice1Start > 0 {
@@ -71,9 +73,24 @@ func SeachBook(ctx *gin.Context) {
 		qList = append(qList, priceRangeQuery)
 	}
 
+	//处理排序
+	sortList := make([]elastic.Sorter, 0)
+	{
+		if searchModel.OrderSet.Score {
+			sortList = append(sortList, elastic.NewScoreSort().Desc())
+		}
+		if searchModel.OrderSet.PriceOrder == Models.OrderByPriceAsc { //从低到高
+			sortList = append(sortList, elastic.NewFieldSort("BookPrice1").Asc())
+		}
+		if searchModel.OrderSet.PriceOrder == Models.OrderByPriceDesc { //从高到低
+			sortList = append(sortList, elastic.NewFieldSort("BookPrice1").Desc())
+		}
+	}
+
 	boolMustQuery := elastic.NewBoolQuery().Must(qList...)
 
-	rsp, err := AppInit.GetEsClient().Search().Query(boolMustQuery).
+	rsp, err := AppInit.GetEsClient().Search().Query(boolMustQuery).SortBy(sortList...).
+		From((searchModel.Current - 1) * searchModel.Size).Size(searchModel.Size). //current初始为1 所以-1
 		Index("books").Do(ctx)
 	if err != nil {
 		ctx.JSON(500, gin.H{
@@ -81,7 +98,9 @@ func SeachBook(ctx *gin.Context) {
 		})
 	} else {
 		ctx.JSON(200, gin.H{
-			"result": MapToBooks(rsp),
+			"result": MapToBooks(rsp), "metas": gin.H{
+				"total": rsp.TotalHits(),
+			},
 		})
 	}
 }
