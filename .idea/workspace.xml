@@ -3,11 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="996a7c23-7366-46fa-a77b-6bb4978f9176" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es06_demo/Funs/books_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/Funs/books_search.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/es06_demo/Models/SearchModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/Models/SearchModel.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/es06_demo/Server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/Server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es06_demo/htmls/components/booklist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/htmls/components/booklist.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/1.enter kb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/10.query by terms.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/11.query by match.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/12.get analysis-ik plugins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/13.analysis highlight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/14.analysis ik.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/15.show two [].png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/16.sql bug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/17.fold by collapse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/18.show 20 items.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/19.bool search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/2.run kb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/20.range search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/3.del kb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/4.create kb mapping.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/5.search show top 10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/6.del :books.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/7.hand on kb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/8.more hand on kb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana/9.query by term.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +68,20 @@
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/es06_demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/es06_demo" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/es04" />
-      <recent name="$PROJECT_DIR$/es01" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/es01/main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/es06_demo" />
+      <recent name="$PROJECT_DIR$/es04" />
+      <recent name="$PROJECT_DIR$/es01" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build Go_ElasticSearch7/es06_demo/Server">
@@ -86,6 +103,15 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build server.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go_ElasticSearch7" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Server/server.go" />
+      <package value="Go_ElasticSearch7" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go_ElasticSearch7" />
       <working_directory value="$PROJECT_DIR$" />
@@ -95,19 +121,16 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="booklist.vue" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Go_ElasticSearch/es06_demo/htmls/components/booklist.vue" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="search.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Go_ElasticSearch/es06_demo/htmls/search.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build Go_ElasticSearch7/es06_demo/Server" />
+        <item itemvalue="Go Build.go build server.go (1)" />
         <item itemvalue="Go Build.go build server.go" />
         <item itemvalue="JavaScript Debug.search.html" />
         <item itemvalue="Go Build.go build books_search.go" />
-        <item itemvalue="JavaScript Debug.booklist.vue" />
       </list>
     </recent_temporary>
   </component>
@@ -131,26 +154,26 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1094" y="194" key="#go_build_books_search.go/0.23.1920.1057@0.23.1920.1057" timestamp="1622562601691" />
-    <state x="918" y="166" key="CommitChangelistDialog2" timestamp="1622723127928">
+    <state x="918" y="166" key="CommitChangelistDialog2" timestamp="1622723150344">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="918" y="166" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1622723127928" />
-    <state width="1878" height="906" key="GridCell.Tab.0.bottom" timestamp="1622723066322">
+    <state x="918" y="166" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1622723150344" />
+    <state width="1557" height="466" key="GridCell.Tab.0.bottom" timestamp="1622903182267">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="906" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1622723066322" />
-    <state width="1878" height="906" key="GridCell.Tab.0.center" timestamp="1622723066321">
+    <state width="1557" height="466" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1622903182267" />
+    <state width="1557" height="466" key="GridCell.Tab.0.center" timestamp="1622903182266">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="906" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1622723066321" />
-    <state width="1878" height="906" key="GridCell.Tab.0.left" timestamp="1622723066320">
+    <state width="1557" height="466" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1622903182266" />
+    <state width="1557" height="466" key="GridCell.Tab.0.left" timestamp="1622903182266">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="906" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1622723066320" />
-    <state width="1878" height="906" key="GridCell.Tab.0.right" timestamp="1622723066322">
+    <state width="1557" height="466" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1622903182266" />
+    <state width="1557" height="466" key="GridCell.Tab.0.right" timestamp="1622903182267">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="906" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1622723066322" />
+    <state width="1557" height="466" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1622903182267" />
     <state x="872" y="181" key="SettingsEditor" timestamp="1622213960509">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
