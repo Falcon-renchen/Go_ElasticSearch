@@ -1,0 +1,5 @@
+time="2021-06-06T00:01:47+08:00" level=info msg="| 200 |   4.743003ms |            ::1 | GET | /ui/search.html |"
+time="2021-06-06T00:01:49+08:00" level=info msg="| 304 |   1.154475ms |            ::1 | GET | /ui/components/booklist.vue |"
+time="2021-06-06T00:01:49+08:00" level=info msg="| 200 |  24.555293ms |            ::1 | GET | /helper/press |"
+time="2021-06-06T00:01:52+08:00" level=info msg="| 200 |    159.872µs |            ::1 | GET | /ui/search.html |"
+time="2021-06-06T00:01:52+08:00" level=info msg="| 200 |   8.116471ms |            ::1 | GET | /helper/press |"

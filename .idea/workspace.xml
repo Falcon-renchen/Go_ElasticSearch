@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996a7c23-7366-46fa-a77b-6bb4978f9176" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kibana/21.score sort.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es06_demo/Middleware/LogMiddleware.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es07_logrus/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es07_logrus/mylog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es06_demo/Funs/books_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/Funs/books_search.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es06_demo/Models/SearchModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/Models/SearchModel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es06_demo/htmls/components/booklist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/htmls/components/booklist.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es06_demo/htmls/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/htmls/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <recent name="$PROJECT_DIR$/es01" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build Go_ElasticSearch7/es06_demo/Server">
+  <component name="RunManager" selected="Go Build.go build server.go">
     <configuration name="go build Go_ElasticSearch7/es06_demo" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go_ElasticSearch7" />
       <working_directory value="$PROJECT_DIR$" />
@@ -86,11 +85,20 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build server.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build Go_ElasticSearch7/es07_logrus" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go_ElasticSearch7" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/es07_logrus/main.go" />
+      <package value="Go_ElasticSearch7/es07_logrus" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go_ElasticSearch7" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/Server/server.go" />
+      <filePath value="$PROJECT_DIR$/es07_logrus/main.go" />
       <package value="Go_ElasticSearch7" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -104,16 +112,13 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="search.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Go_ElasticSearch/es06_demo/htmls/search.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build Go_ElasticSearch7/es06_demo/Server" />
-        <item itemvalue="Go Build.go build Go_ElasticSearch7/es06_demo" />
-        <item itemvalue="Go Build.go build server.go (1)" />
         <item itemvalue="Go Build.go build server.go" />
-        <item itemvalue="JavaScript Debug.search.html" />
+        <item itemvalue="Go Build.go build Go_ElasticSearch7/es06_demo/Server" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build Go_ElasticSearch7/es07_logrus" />
+        <item itemvalue="Go Build.go build Go_ElasticSearch7/es06_demo" />
       </list>
     </recent_temporary>
   </component>
@@ -129,6 +134,10 @@
     <proxy>https://goproxy.io</proxy>
   </component>
   <component name="WindowStateProjectService">
+    <state x="1134" y="361" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1622907526701">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1134" y="361" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1057@0.23.1920.1057" timestamp="1622907526701" />
     <state x="677" y="194" key="#go_build_books_helper.go" timestamp="1622560662070">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -137,26 +146,42 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1094" y="194" key="#go_build_books_search.go/0.23.1920.1057@0.23.1920.1057" timestamp="1622562601691" />
-    <state x="918" y="166" key="CommitChangelistDialog2" timestamp="1622903612464">
+    <state x="918" y="166" key="CommitChangelistDialog2" timestamp="1622908956786">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="918" y="166" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1622903612464" />
-    <state width="1044" height="155" key="GridCell.Tab.0.bottom" timestamp="1622906935090">
+    <state x="918" y="166" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1622908956786" />
+    <state width="1049" height="238" key="GridCell.Tab.0.bottom" timestamp="1622908881951">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1044" height="155" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1622906935090" />
-    <state width="1044" height="155" key="GridCell.Tab.0.center" timestamp="1622906935090">
+    <state width="1049" height="238" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1622908881951" />
+    <state width="1049" height="238" key="GridCell.Tab.0.center" timestamp="1622908881950">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1044" height="155" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1622906935090" />
-    <state width="1044" height="155" key="GridCell.Tab.0.left" timestamp="1622906935088">
+    <state width="1049" height="238" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1622908881950" />
+    <state width="1049" height="238" key="GridCell.Tab.0.left" timestamp="1622908881948">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1044" height="155" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1622906935088" />
-    <state width="1044" height="155" key="GridCell.Tab.0.right" timestamp="1622906935090">
+    <state width="1049" height="238" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1622908881948" />
+    <state width="1049" height="238" key="GridCell.Tab.0.right" timestamp="1622908881950">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1044" height="155" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1622906935090" />
+    <state width="1049" height="238" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1622908881950" />
+    <state width="1044" height="357" key="GridCell.Tab.1.bottom" timestamp="1622907792440">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1044" height="357" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1622907792440" />
+    <state width="1044" height="357" key="GridCell.Tab.1.center" timestamp="1622907792439">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1044" height="357" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1622907792439" />
+    <state width="1044" height="357" key="GridCell.Tab.1.left" timestamp="1622907792438">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1044" height="357" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1622907792438" />
+    <state width="1044" height="357" key="GridCell.Tab.1.right" timestamp="1622907792440">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1044" height="357" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1622907792440" />
     <state x="872" y="181" key="SettingsEditor" timestamp="1622213960509">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -173,5 +198,9 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1157" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1622173021580" />
+    <state x="1107" y="470" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1622907544457">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1107" y="470" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1622907544457" />
   </component>
 </project>

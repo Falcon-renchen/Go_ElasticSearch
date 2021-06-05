@@ -2,6 +2,7 @@ package main
 
 import (
 	"Go_ElasticSearch7/es06_demo/Funs"
+	"Go_ElasticSearch7/es06_demo/Middleware"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"gopkg.in/go-playground/validator.v9"
@@ -11,6 +12,8 @@ import (
 
 func main() {
 	router := gin.Default()
+	router.Use(Middleware.LogMiddleware(), gin.Recovery()) //设置日志
+
 	if v, ok := binding.Validator.Engine().(*validator.Validate); ok {
 		err := v.RegisterValidation("mygte", func(fl validator.FieldLevel) bool {
 			param := fl.Param()                        //获取参数  mygte=BookPrice1Start 的 BookPrice1Start
