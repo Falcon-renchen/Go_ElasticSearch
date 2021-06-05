@@ -3,28 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="996a7c23-7366-46fa-a77b-6bb4978f9176" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es06_demo/Models/SearchModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/Models/SearchModel.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/es06_demo/Server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/Server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/1.enter kb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/10.query by terms.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/11.query by match.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/12.get analysis-ik plugins.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/13.analysis highlight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/14.analysis ik.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/15.show two [].png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/16.sql bug.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/17.fold by collapse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/18.show 20 items.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/19.bool search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/2.run kb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/20.range search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/3.del kb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/4.create kb mapping.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/5.search show top 10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/6.del :books.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/7.hand on kb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/8.more hand on kb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kibana/9.query by term.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,10 +133,10 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1094" y="194" key="#go_build_books_search.go/0.23.1920.1057@0.23.1920.1057" timestamp="1622562601691" />
-    <state x="918" y="166" key="CommitChangelistDialog2" timestamp="1622723150344">
+    <state x="918" y="166" key="CommitChangelistDialog2" timestamp="1622903193708">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="918" y="166" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1622723150344" />
+    <state x="918" y="166" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1622903193708" />
     <state width="1557" height="466" key="GridCell.Tab.0.bottom" timestamp="1622903182267">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -178,10 +157,14 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="872" y="181" key="SettingsEditor/0.23.1920.1057@0.23.1920.1057" timestamp="1622213960509" />
-    <state x="765" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622563425258">
+    <state x="953" y="158" width="960" height="857" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1622903558791">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="765" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1057@0.23.1920.1057" timestamp="1622563425258" />
+    <state x="953" y="158" width="960" height="857" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1622903558791" />
+    <state x="765" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622903607475">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="765" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1057@0.23.1920.1057" timestamp="1622903607475" />
     <state x="1157" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1622173021580">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>

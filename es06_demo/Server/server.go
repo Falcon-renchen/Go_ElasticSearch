@@ -12,7 +12,7 @@ import (
 func main() {
 	router := gin.Default()
 	if v, ok := binding.Validator.Engine().(*validator.Validate); ok {
-		err := v.RegisterValidation("gtefield", func(fl validator.FieldLevel) bool {
+		err := v.RegisterValidation("mygte", func(fl validator.FieldLevel) bool {
 			param := fl.Param()                        //获取参数  mygte=BookPrice1Start 的 BookPrice1Start
 			v := fl.Parent().Elem().FieldByName(param) //判断=BookPrice1Start是否合法
 			if !v.IsValid() {
