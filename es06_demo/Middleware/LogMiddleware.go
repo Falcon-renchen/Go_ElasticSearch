@@ -14,6 +14,7 @@ func LogMiddleware() gin.HandlerFunc {
 	if err != nil {
 		logrus.Fatal(err)
 	}
+	logger.AddHook(NewEsHook()) //添加钩子
 	logger.Out = logfile
 
 	return func(ctx *gin.Context) {
@@ -25,13 +26,20 @@ func LogMiddleware() gin.HandlerFunc {
 		requestURI := ctx.Request.RequestURI
 		statusCode := ctx.Writer.Status()
 		requestIP := ctx.ClientIP()
-		//日志格式
-		logger.Infof("| %2d | %12v | %14s | %s | %s |",
-			statusCode,
-			execTime,
-			requestIP,
-			requestMethod,
-			requestURI,
-		)
+		////日志格式
+		//logger.Infof("| %2d | %12v | %14s | %s | %s |",
+		//	statusCode,
+		//	execTime,
+		//	requestIP,
+		//	requestMethod,
+		//	requestURI,
+		//)
+		//进行设置字段
+		logger.WithField("ip", requestIP).
+			WithField("status", statusCode).
+			WithField("duration", execTime.Milliseconds()).
+			WithField("method", requestMethod).
+			WithField("url", requestURI).Info() //hook勾住了url，就会在terminal显示  /books?a=2   类似url
+
 	}
 }

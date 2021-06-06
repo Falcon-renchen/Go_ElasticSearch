@@ -3,3 +3,8 @@ time="2021-06-06T00:01:49+08:00" level=info msg="| 304 |   1.154475ms |         
 time="2021-06-06T00:01:49+08:00" level=info msg="| 200 |  24.555293ms |            ::1 | GET | /helper/press |"
 time="2021-06-06T00:01:52+08:00" level=info msg="| 200 |    159.872µs |            ::1 | GET | /ui/search.html |"
 time="2021-06-06T00:01:52+08:00" level=info msg="| 200 |   8.116471ms |            ::1 | GET | /helper/press |"
+time="2021-06-06T22:27:04+08:00" level=info duration="354.973µs" ip="::1" method=POST status=500 url=/books/search
+time="2021-06-06T22:35:43+08:00" level=info duration=28.710084ms ip="::1" method=GET status=200 url="/books?a=2"
+time="2021-06-06T23:46:00+08:00" level=info duration=13.771933ms ip="::1" method=GET status=200 url="/books?a=2"
+time="2021-06-06T23:46:44+08:00" level=info duration=0 fields.level=info fields.msg= fields.time="2021-06-06 23:46:44.119581 +0800 CST m=+10.491778723" ip="::1" method=GET status=404 url="/bookslogs?a=2"
+time="2021-06-06T23:46:48+08:00" level=info duration=9 fields.level=info fields.msg= fields.time="2021-06-06 23:46:48.358068 +0800 CST m=+14.730237788" ip="::1" method=GET status=200 url="/books?a=2"
