@@ -10,7 +10,7 @@ import (
 
 func main() {
 	//将文件中日志插入到 kibana中
-	p := logparser.NewHttpdParser("../logs/apache_log.txt")
+	p := logparser.NewHttpdParser("/Users/falcon/Documents/Go_Project/Go_ElasticSearch/es06_demo/logparser/logs/apache_log.txt")
 	list := p.Parse()
 	client := AppInit.GetEsClient()
 	bulk := client.Bulk()
