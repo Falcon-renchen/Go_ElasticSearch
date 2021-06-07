@@ -34,12 +34,22 @@ func LogMiddleware() gin.HandlerFunc {
 		//	requestMethod,
 		//	requestURI,
 		//)
+		/*
+			//进行设置字段
+			logger.WithField("ip", requestIP).
+				WithField("status", statusCode).
+				WithField("duration", execTime.Milliseconds()).
+				WithField("method", requestMethod).
+				WithField("url", requestURI).Info() //hook勾住了url，就会在terminal显示  /books?a=2   类似url
+		*/
 		//进行设置字段
 		logger.WithField("ip", requestIP).
 			WithField("status", statusCode).
 			WithField("duration", execTime.Milliseconds()).
 			WithField("method", requestMethod).
-			WithField("url", requestURI).Info() //hook勾住了url，就会在terminal显示  /books?a=2   类似url
+			WithField("url", requestURI).
+			WithField("referer", ctx.Request.Referer()).
+			WithField("agent", ctx.Request.Header.Get("User-Agent")).Info()
 
 	}
 }

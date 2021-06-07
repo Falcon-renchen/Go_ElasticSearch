@@ -48,6 +48,14 @@ func main() {
 		g.Handle("POST", "/search", Funs.SeachBook)
 	}
 
+	//查询日志里面的aggs
+	loggroup := router.Group("/log/aggs")
+	{
+		//聚合
+		//localhost:8080/log/aggs/max/duration  延迟时间最长的值
+		loggroup.Handle("GET", "/:type/:field", Funs.LogAgg)
+	}
+
 	//helper
 	helper := router.Group("/helper")
 	{

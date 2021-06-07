@@ -1,8 +1,11 @@
 package logparser
 
 import (
+	"Go_ElasticSearch7/es06_demo/AppInit"
 	"bufio"
 	"bytes"
+	"context"
+	"github.com/olivere/elastic/v7"
 	"log"
 	"os"
 	"regexp"
@@ -25,34 +28,40 @@ func MapGroup(list []string, names []string) map[string]interface{} {
 }
 
 type HttpdParser struct {
-	lines []string
+	Regex *regexp.Regexp
 }
 
-func NewHttpdParser(filename string) *HttpdParser {
-	file, err := os.Open(filename)
-	if err != nil {
-		log.Fatal("logfile error:", err)
-	}
-	var lines []string
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		lines = append(lines, scanner.Text())
-	}
-	return &HttpdParser{lines: lines}
-}
-func (this *HttpdParser) Parse() []map[string]interface{} {
+func NewHttpdParser() *HttpdParser {
 	var buffer bytes.Buffer
-	buffer.WriteString(`^(?P<ip>\d+.\d+.\d+.\d+).*?`)              // ip 格式
+	buffer.WriteString(`^(?P<ip>\d+.\d+.\d+.\d+).*?`)              // ip
 	buffer.WriteString(`\[(?P<time>.+?)\]\s*`)                     //time
 	buffer.WriteString(`\"(?P<method>[A-Z]+)\s*(?P<url>.*?)\"\s*`) //method和URL
 	buffer.WriteString(`(?P<status>\d+)\s*`)                       //status
 	buffer.WriteString(`(?P<duration>\d+)\s*`)                     //duration
-	ret := make([]map[string]interface{}, 0)
-	for _, line := range this.lines {
-		reg := regexp.MustCompile(buffer.String())
-		result := reg.FindStringSubmatch(line)
-		m := MapGroup(result, reg.SubexpNames())
-		ret = append(ret, m)
+	buffer.WriteString(`\"(?P<referer>.*?)\"\s*`)                  //referer
+	buffer.WriteString(`\"(?P<agent>.*?)\"\s*`)                    //agent
+	return &HttpdParser{Regex: regexp.MustCompile(buffer.String())}
+
+}
+func (this *HttpdParser) ParseToEs(filename string) {
+	file, err := os.Open(filename)
+	if err != nil {
+		log.Fatal("logfile error:", err)
 	}
-	return ret
+	client := AppInit.GetEsClient()
+	bulk := client.Bulk()
+	scanner := bufio.NewScanner(file)
+	//每读取一行就往bulk里面加入indexrequest ，将内容插入到es里面
+	for scanner.Scan() {
+		result := this.Regex.FindStringSubmatch(scanner.Text())
+		m := MapGroup(result, this.Regex.SubexpNames())
+		req := elastic.NewBulkIndexRequest()
+		req.Index("bookslogs").Doc(m) //直接插入
+		bulk.Add(req)
+	}
+	_, err = bulk.Do(context.Background())
+	if err != nil {
+		log.Println(err)
+	}
+
 }
