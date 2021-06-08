@@ -45,15 +45,34 @@ func NewLogModelQuery() *graphql.Object {
 				    }
 				}
 			*/
+
+			//多参数
+			/*
+				query{
+				    Searchs (url:"/api*",method:"GET"){
+				        Ip
+				        Url
+				        Method
+				    }
+				}
+			*/
 			"Searchs": &graphql.Field{Type: graphql.NewList(NewLogModelGraphQL()),
 				//不传参数不用写这个
 				//Args:StringArg("url"), 单参数
-				Args: StringArgs("url", "method"), //多参数
+				//Args: StringArgs("url", "method"), //多参数
 				//Args: graphql.FieldConfigArgument{"id": &graphql.ArgumentConfig{Type: graphql.Int}},
 				//和User(id:1)对应
+
+				//返回args
+				Args: ArgsBuilder().StringArgs("url", "method").IntArgs("size").Build(),
 				Resolve: func(p graphql.ResolveParams) (i interface{}, e error) {
 					//return NewLogService().Search(p.Args["url"].(string)) //单参数
-					return NewLogService().Searchs(p.Args["url"], p.Args["method"]) //多参数
+					//return NewLogService().Searchs(p.Args["url"], p.Args["method"]) //多参数
+					//灵活传参数
+					return NewLogService().
+						WhitUrlQuery(p.Args["url"]).
+						WhitMethodQuery(p.Args["method"]).
+						WhitSize("size").Searchs()
 				}},
 		},
 	})
