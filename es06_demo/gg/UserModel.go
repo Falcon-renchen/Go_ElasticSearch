@@ -1,13 +1,14 @@
 package gg
 
 import (
+	"fmt"
 	"github.com/graphql-go/graphql"
 	"log"
 )
 
 type UserModel struct {
-	Id   int
-	Name string
+	Id   int    `gorm:"column:user_id;AUTO_INCREMENT;PRIMARY_KEY"`
+	Name string `gorm:"column:user_name;type:varchar(50)"`
 }
 
 func NewUserModel() *UserModel {
@@ -31,9 +32,16 @@ func NewUserModelQuery() *graphql.Object {
 		Name: "UserQuery",
 		Fields: graphql.Fields{
 			//取值内容在Resolve里面
-			"User": &graphql.Field{Type: NewUserModelGraphQL(), Resolve: func(p graphql.ResolveParams) (i interface{}, e error) {
-				return NewUserModel(), nil
-			}},
+			"User": &graphql.Field{Type: NewUserModelGraphQL(),
+				Args: graphql.FieldConfigArgument{"id": &graphql.ArgumentConfig{Type: graphql.Int}},
+				//和User(id:1)对应
+				Resolve: func(p graphql.ResolveParams) (i interface{}, e error) {
+					if id, ok := p.Args["id"]; ok {
+						return NewUserService().GetUserById(id.(int))
+					} else {
+						return nil, fmt.Errorf("id param error")
+					}
+				}},
 		},
 	})
 }

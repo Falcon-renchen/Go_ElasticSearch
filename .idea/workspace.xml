@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996a7c23-7366-46fa-a77b-6bb4978f9176" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/es06_demo/gg.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es06_demo/gg/UserModel.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana/24.PUT bookslogs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana/25.delete date by query.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana/26.bookslogs format.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana/27.PUT new bookslogs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana/28.PUT bookslogs_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana/29.big date by reindex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana/30.set alias.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana/31.group by.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es06_demo/gg/UserService.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kibana/31.group by 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kibana/32.Graphql base.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es06_demo/AppInit/EsHelper.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/AppInit/EsHelper.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es06_demo/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es06_demo/gg.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/gg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es06_demo/gg/UserModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/es06_demo/gg/UserModel.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +64,7 @@
       <recent name="$PROJECT_DIR$/es01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/es06_demo/gg" />
       <recent name="$PROJECT_DIR$/es06_demo/logparser/logs" />
       <recent name="$PROJECT_DIR$/es06_demo/logparser/test" />
       <recent name="$PROJECT_DIR$" />
@@ -158,10 +151,10 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1094" y="194" key="#go_build_books_search.go/0.23.1920.1057@0.23.1920.1057" timestamp="1622562601691" />
-    <state x="918" y="166" key="CommitChangelistDialog2" timestamp="1623065597471">
+    <state x="918" y="166" key="CommitChangelistDialog2" timestamp="1623146226117">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="918" y="166" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1623065597471" />
+    <state x="918" y="166" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1623146226117" />
     <state width="1053" height="244" key="GridCell.Tab.0.bottom" timestamp="1623065617569">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>

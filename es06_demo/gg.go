@@ -10,13 +10,13 @@ import (
 func main() {
 
 	queryString := `
-query{
-    User{
-        id
-        name
-    }
-}
-`
+					query{
+						User(id:1){
+							id
+							name
+						}
+					}
+					`
 	param := graphql.Params{Schema: gg.NewUserQuerySchema(), RequestString: queryString}
 	ret := graphql.Do(param)
 	if ret.HasErrors() {
@@ -24,5 +24,4 @@ query{
 	} else {
 		fmt.Println(ret.Data)
 	}
-
 }
