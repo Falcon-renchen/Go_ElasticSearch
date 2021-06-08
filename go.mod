@@ -5,6 +5,7 @@ go 1.14
 require (
 	github.com/gin-gonic/gin v1.7.2
 	github.com/graphql-go/graphql v0.7.9
+	github.com/graphql-go/handler v0.2.3
 	github.com/jinzhu/gorm v1.9.16
 	github.com/olivere/elastic/v7 v7.0.24
 	github.com/sirupsen/logrus v1.8.1

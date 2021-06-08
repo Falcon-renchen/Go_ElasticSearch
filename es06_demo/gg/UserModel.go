@@ -12,7 +12,8 @@ type UserModel struct {
 }
 
 func NewUserModel() *UserModel {
-	return &UserModel{Id: 101, Name: "test"}
+	return &UserModel{} //gg
+	//return &UserModel{Id: 101, Name: "test"}    // test/test
 }
 
 //映射实体  第一步:
@@ -34,7 +35,6 @@ func NewUserModelQuery() *graphql.Object {
 			//取值内容在Resolve里面
 			"User": &graphql.Field{Type: NewUserModelGraphQL(),
 				Args: graphql.FieldConfigArgument{"id": &graphql.ArgumentConfig{Type: graphql.Int}},
-				//和User(id:1)对应
 				Resolve: func(p graphql.ResolveParams) (i interface{}, e error) {
 					if id, ok := p.Args["id"]; ok {
 						return NewUserService().GetUserById(id.(int))
